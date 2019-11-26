@@ -1,6 +1,6 @@
 require('dotenv').config();
 const { RTMClient } = require('@slack/rtm-api');
-var token = process.env.SLACK_TOKEN;//'xoxb-829187016384-828724813684-zOJhCSjoqh2VuLkaNnAj27zg';
+var token = process.env.SLACK_TOKEN;
 
 var rtm = new RTMClient(token);
 rtm.start();
